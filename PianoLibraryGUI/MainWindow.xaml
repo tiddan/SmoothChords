@@ -1,0 +1,11 @@
+﻿<Window x:Class="PianoLibraryGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:com="clr-namespace:SmoothChords.Components;assembly=SmoothChords"
+        xmlns:con="clr-namespace:PianoLibrary.Controls;assembly=PianoLibrary"
+        Title="MainWindow" Height="150" Width="550">
+    <StackPanel>
+        <con:PianoControl Width="520" Height="70" />
+        <com:ChordLabel />
+    </StackPanel>
+</Window>
