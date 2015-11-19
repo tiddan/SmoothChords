@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:v="clr-namespace:SmoothChords.View"
              xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-             xmlns:val="clr-namespace:SmoothChords.Validators"
              xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF4"
              xmlns:m="clr-namespace:SmoothChords.Model"
              mc:Ignorable="d" 
@@ -59,9 +58,6 @@
                 <TextBox Width="50">
                     <TextBox.Text>
                         <Binding NotifyOnValidationError="True" Path="Tempo" Mode="TwoWay" FallbackValue="120" UpdateSourceTrigger="PropertyChanged">
-                            <Binding.ValidationRules>
-                                <val:TempoValidator />
-                            </Binding.ValidationRules>
                         </Binding>
                     </TextBox.Text>
                 </TextBox>
